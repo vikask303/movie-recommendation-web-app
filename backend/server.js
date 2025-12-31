@@ -7,6 +7,8 @@ import recommendRoutes from "./routes/recommend.routes.js"
 dotenv.config()
 connectDB()
 
+const PORT = process.env.PORT || 5000
+
 const fastify = Fastify()
 
 await fastify.register(cors, {
@@ -16,6 +18,7 @@ await fastify.register(cors, {
 
 fastify.register(recommendRoutes)
 
-fastify.listen({ port: 5000 }, () => {
-  console.log("server is running")
-})
+fastify.listen({ port: PORT, host: "0.0.0.0" },() => {
+    console.log(`Server running on port ${PORT}`)
+  }
+)
