@@ -1,5 +1,5 @@
 import { GoogleGenerativeAI } from "@google/generative-ai"
-import Recommendation from "../models/Recommendation.js"
+import Recommendation from "../models/recommendation.js"
 import dotenv from "dotenv"
 dotenv.config()
 
