@@ -104,5 +104,5 @@ Demonstrating API integration and environment variable management
 
 Assessment and academic projects
 
----
+--- 
 
